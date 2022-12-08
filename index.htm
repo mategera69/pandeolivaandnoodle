@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Pan de Oliva & Noodle</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+body {
+  background-color: beige;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <img src="jtx.png" alt="Logó" height="50px">
+    <a href="#home" class="w3-bar-item w3-button">Pan de Oliva & Noodle</a>
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Legfrissebb híreink</a>
+      <a href="#menu" class="w3-bar-item w3-button">Étlap</a>
+      <a href="#contact" class="w3-bar-item w3-button">Kapcsolat és rendelés leadása</a>
+      <button onclick="myFunction()" class="w3-bar-item w3-button">Téma váltása</button>
+
+      <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
+    </div>
+  </div>
+</div>
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:400px" id="home">
+  <img class="w3-image" src="W3.CSS%20Template_elemei/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge"></h1>
+  </div>
+</header>
+
+
+<div class="w3-content" style="max-width:1100px">
+
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="allas.jpg" class="w3-round w3-image w3-opacity-min" alt="Állás" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Álláshirdetés!</h1><br>
+      <h5 class="w3-center">Pizzafutár pozícióba</h5>
+      <p class="w3-large">Éttermünk állást hirdet <span class="w3-tag w3-light-grey">Pizzafutár</span> pozícióban.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Feltétel a B kategóriás jogosítvány, szorgalom, hétvégi munkavállalás.
+      Rugalmas munkaidő, hétfői szabadnap, korrekt fizetés.</p>
+      <p class="w3-large">Jelenkezéseiket várjuk <span class="w3-tag w3-light-grey">telefonon</span>, <span class="w3-tag w3-light-grey">személyesen</span>, vagy
+        <span class="w3-tag w3-light-grey">e-mailben</span> .</p>
+    </div>
+  </div>
+
+<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Pan de Oliva&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">Piratebay</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+
+<hr>
+<h1 class="w3-center" id="menu">Étlapunk</h1><br>
+<a href="https://www.facebook.com/pandeolivabonyhad/menu/?id=100063538720320&sk=menu" title="Étlap">Étlap a Facebook oldalunkon</a>
+<hr>
+
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Kapcsolat és rendelés leadása</h1><br>
+    <p>Elvitelre és kiszálítással készítjük a spanyol, illetve olasz konyhából ötleteket merítő ételeket. Célünk a gusztusos és incsiklanó ételek készítése minden alkalommal.
+      Rendeléseiket Bonyhád 20km körzetében kiszállítjuk, a településeket kérdezze kollegáinktól!</p>
+    <p class="w3-text-blue-grey w3-large"><b>Pan de Oliva & Noodle, 7150 Bonyhád, Perczel utca 80.</b></p>
+    <p>Megrendelésüket telefonon a +36 (74)-456-069, illetve a +36 (20)-546-77-99 számokon tehetnek, illetve az oldalon alább.</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Név" required="" name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="E-Mail" required="@" name="E-Mail"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Hány fő" required="" name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Kiszállítási cím" required="" name="Address"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Rendelés / Speciális kérések" required="" name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">Rendelés küldése</button></p>
+    </form>
+  </div>
+
+</div>
+
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+</body></html>
